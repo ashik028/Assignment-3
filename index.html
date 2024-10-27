@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+
+    <!-- DaisyUI+TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Coustom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg_color: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
+                        bg_green: '#ABEF5F',
+                        text_color_head: '#494949',
+                        text_color_gray: '#737373',
+                        main_color: 'rgb(171, 239, 95)',
+                        View_color: 'rgba(171, 239, 95, 0.5);',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <Style>
+        .font-monrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </Style>
+
+</head>
+
+<body class="font-monrope">
+    <!-- Header Section -->
+    <header class="container mx-auto bg_color">
+
+        <!-- Nav-->
+        <nav class="py-4 px-3 md:px-6">
+            <!-- Nav Started -->
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a href="" class="flex items-center m">
+                        <span class="bg-bg_green h-8 w-8 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </span>
+                        <span class="text-2xl md:text-3xl font-extrabold ml-2">Retenrio</span>
+                    </a>
+                </div>
+
+                <!-- Nav Center -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 bg-base-100 text-text_color_gray">
+                        <li><a href="home" class="font-extrabold text-text_color_head">Home</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="portfolio">Portfolio</a></li>
+                        <li><a href="blogs">Blogs</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Nav End -->
+                <div class="navbar-end">
+                    <div class=" hidden lg:flex items-center gap-2 lg:gap-4">
+                        <a href=""
+                            class="bg-[#E9E9E9]  w-8 h-8 lg:w-10 lg:h-10 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass text-text_color_head"></i>
+                        </a>
+                        <a href=""
+                            class="bg-[#E9E9E9]  w-8 h-8 lg:w-10 lg:h-10 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-cart-shopping text-text_color_head"></i>
+                        </a>
+                        <a href="" class="btn bg-bg_green rounded-full">
+                            <span class="text-base lg:text-lg font-extrabold ml-2">Book Consult</span>
+                            <span
+                                class="bg-[#1C1C1C] h-6 w-6 lg:w-8 lg:h-8 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-right -rotate-45 text-white text-xl"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DropDown -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="lg:hidden">
+                        <i
+                            class="fa-solid fa-bars text-lg bg-[#E9E9E9] w-10 h-10 rounded-full flex items-center justify-center"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 right-0 shadow">
+                        <li><a href="home" class="font-extrabold text-text_color_head">Home</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="portfolio">Portfolio</a></li>
+                        <li><a href="blogs">Blogs</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- A Bran House Section -->
+        <div class="flex flex-col items-center justify-center px-4 pt-12  md:px-12 md:pt-24 mb-24">
+            <!-- Image -->
+            <div>
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <!-- Text -->
+            <h2 class="text-3xl lg:text-6xl lg:w-10/12 font-extrabold text-center mb-3 md:mb-6 mt-3 mf:mt-6">A barn house of this design has a striking appearance</h2>
+            <p class="text-center lg:w-4/6 font-medium text-text_color_head ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <!-- Button -->
+             <a href="" class="bg-View_color  w-full md:w-auto flex items-center justify-center gap-4 rounded-full py-3 px-5 mt-8">
+                <span class="text-xl font-bold text-[#212121]">View Details</span>
+                <span class="bg-bg_green w-6 h-6 lg:w-8 lg:h-8 rounded-full flex justify-center items-center "><i class="fa-solid fa-arrow-right -rotate-45 "></i></span>
+             </a>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main></main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+</body>
+
+</html>
